@@ -48,5 +48,6 @@ python app/game.py
 
 Run the inventory report: 
 ```sh
-python app/groceries.py
+#python app/groceries.py
+python -m app.groceries
 ```
