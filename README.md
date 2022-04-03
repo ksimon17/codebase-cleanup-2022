@@ -69,7 +69,7 @@ Also, make sure to add all of your environment variable to your repository's ".g
 .env
 ```
 
-# Usage
+# Usage - Run Appropriate Files
 Once you have properly set up your local environment, installed all necessary packages, and set up your SendGrid API Key and AlphaVantage API Key credentials, you are ready to run the program. 
 
 In order run the game, please enter the following into the command line:
@@ -95,4 +95,9 @@ python -m app.crypto
 In order to run the unemployment report, please enter the following into the command line:
 ```sh
 python -m app.unemployment
+```
+# Usage - Run Appropriate Tests
+If to run any internal tests within the program, please enter the following in the command line: 
+```sh 
+pytest
 ```
