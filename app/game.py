@@ -1,4 +1,3 @@
-from json.tool import main
 from random import choice
 
 

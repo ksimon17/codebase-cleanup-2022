@@ -1,5 +1,3 @@
-
-
 print("STOCKS REPORT...")
 
 import os
