@@ -26,7 +26,7 @@ def calculate_avg_price(prices):
     """
     This function accept any list or DataFrame of products as its input parameter, and returns the average price as a float (unformatted)
     Params: prices, which hold the prices of every individual product within the list or DataFrame of products passed in
-    Datatype of params: prices is either of the List catatype or the Pandas DataFrame datatype
+    Datatype of params: prices is either of the List datatype or the Pandas DataFrame datatype
     Return: the average product price as an unformatted Float
 
     Invoke this function like this: calculate_avg_price(list_of_products)
@@ -37,9 +37,9 @@ def calculate_avg_price(prices):
 if __name__ == "__main__":
 
     # checks to see if a products.csv file exists. If not, it uses the default
-    if filepath_compilation("products_csv") == True:
+    if filepath_compilation("products.csv") == True:
         print("USING CUSTOM PRODUCTS CSV FILE...")
-        csv_filepath = filepath_compilation("products_csv")
+        csv_filepath = filepath_compilation("products.csv")
     else:
         print("USING DEFAULT PRODUCTS CSV FILE...")
         csv_filepath = filepath_compilation("default_products.csv")
