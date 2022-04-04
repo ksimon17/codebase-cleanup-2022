@@ -21,14 +21,14 @@ pip install -r requirements.txt
 ```
 
 
-## Configuration
+# Configuration
 
-# AlphaVantage API Key Setup
-Obtain a premium AlphaVantage API Key [here](https://www.alphavantage.co/).
+## AlphaVantage API Key Setup
+Obtain a premium AlphaVantage API Key [here](https://www.alphavantage.co/). You will use your premium AlphaVantage
+API Key to access the necessary stock, crypto, and unemployment report information to run the program. Once you create your AlphaVantage API Key, we will want to store the API Key in an environment variable in the .env file called ```ALPHAVANTAGE_API_KEY```. Use a ".env" file approach to manage these files, as mentioned in the ".env file approach" section below.
 
 
-
-# SendGrid API Key Setup
+## SendGrid API Key Setup
 First, [sign up for a SendGrid account](https://app.sendgrid.com/login?redirect_to=%2Fsettings%2Fapi_keys), then follow the instructions to complete your "Single Sender Verification", clicking the confirmation email to verify your account. 
 NOTE: some users in the passed have reported issues with using yahoo-issued, university-issued, or work-issued emails in the past. Consequently, if you run into similar issues when attempt to set up your SendGrid account, perhaps consider using a personal Gmail account. 
 
@@ -46,7 +46,7 @@ SENDGRID_API_KEY="SG...."
 ```
 
 
-# Environment Variables - ".env" File Approach
+## Environment Variables - ".env" File Approach
 You must set up a local file named ".env" that is outside the root directory of the project. In this file, you will be able to store the necessary environment variables to run the program. For the purposes of the shopping-cart program, the following code will suffice:
 ```sh
 # this is the .env file
@@ -61,13 +61,6 @@ ALPHAVANTAGE_API_KEY="..."
 
 Note that you will need to update the values of the SendGrid environment variables to meet your specific API key and email address that you created in your SendGrid account (instructions for that mentioned in the "SendGrid API Key Setup" Section). Similarly, you will have to update the values of the ```ALPHAVANTAGE_API_KEY``` to your specific premium AlphaVantage API Key to run certain aspects of the program. 
 
-Also, make sure to add all of your environment variable to your repository's ".gitignore" file to ensure it does not get tracked in version control or uploaded to Github:  
-```sh
-# the .gitignore file
-
-# ignore environment variables in the ".env" file:
-.env
-```
 
 # Usage - Run Appropriate Files
 Once you have properly set up your local environment, installed all necessary packages, and set up your SendGrid API Key and AlphaVantage API Key credentials, you are ready to run the program. 
