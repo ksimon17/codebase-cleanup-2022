@@ -1,7 +1,7 @@
-# codebase-cleanup-exercrise
+# codebase-cleanup-exercise
 
 
-## Setup
+# Setup
 
 Create virtual environment:
 
