@@ -65,7 +65,7 @@ In order to run the unemployment report, please enter the following into the com
 python -m app.unemployment
 ```
 # Usage - Run Appropriate Tests
-If to run any internal tests within the program, please enter the following in the command line: 
+In order to run any internal tests within the program, please enter the following in the command line: 
 ```sh 
 pytest
 ```
