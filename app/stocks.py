@@ -1,12 +1,12 @@
 print("STOCKS REPORT...")
 
 import os
-from dotenv import load_dotenv #are these necessary now?
+#from dotenv import load_dotenv #are these necessary now?
 from pandas import read_csv
 
 from app.utils import to_usd
 from app.alphavantage_service import fetch_stocks_data
-load_dotenv() #are these necessary now?
+#load_dotenv() #are these necessary now?
 
 #ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 

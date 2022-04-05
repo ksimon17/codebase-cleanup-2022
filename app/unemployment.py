@@ -10,7 +10,7 @@ import requests
 
 from app.alphavantage_service import fetch_unemployment_data
 
-load_dotenv() #are these necessary now?
+#load_dotenv() #are these necessary now?
 
 
 # ORIGINAL LOGIC 

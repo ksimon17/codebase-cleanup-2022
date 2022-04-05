@@ -31,8 +31,7 @@ def calculate_avg_price(prices):
 
     Invoke this function like this: calculate_avg_price(list_of_products)
     """
-   # return statistics.mean(prices) 
-    return statistics.median(prices) # is this incorrect?
+    return statistics.mean(prices) 
     
 if __name__ == "__main__":
 
@@ -55,21 +54,12 @@ if __name__ == "__main__":
     print("THERE ARE", len(products), "PRODUCTS:")
     print("---------")
 
-    # for p in products:
-    #     print("..." + p["name"] + "   " + to_usd(p["price"]))
-
-    # all_prices = []
-    # for p in products:
-    #     all_prices.append(float(p["price"]))
-
     all_prices = []
     for p in products: 
         print("..." + p["name"] + "   " + to_usd(p["price"]))
         all_prices.append(float(p["price"]))
 
-   # avg_price = calculate_avg_price(all_prices)
-    avg_price = statistics.median(all_prices) # is this the median price or the average price
-    #avg_price = statistics.mean(all_prices)
+    avg_price = calculate_avg_price(all_prices)
 
     print("---------")
     print("AVERAGE PRICE:", to_usd(avg_price))

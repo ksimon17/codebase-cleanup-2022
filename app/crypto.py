@@ -5,14 +5,14 @@ print("CRYPTO REPORT...")
 
 import os
 import json
-from dotenv import load_dotenv #are these necessary now?
+#from dotenv import load_dotenv #are these necessary now?
 import requests
 
 from app.utils import to_usd
 
 from app.alphavantage_service import fetch_crypto_data
 
-load_dotenv() #are these necessary now?
+#load_dotenv() #are these necessary now?
 
 #ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
